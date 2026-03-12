@@ -1,0 +1,62 @@
+/* src/ui/terminal-theme.css */
+#mempool-exe-overlay {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 380px;
+    background-color: #0a0a0a;
+    border: 1px solid #00ff00;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 999999999;
+    padding: 20px;
+    border-radius: 4px;
+    display: none;
+}
+
+#mempool-exe-overlay h2 {
+    margin-top: 0;
+    border-bottom: 1px dashed #00ff00;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mempool-data-row {
+    margin: 10px 0;
+    font-size: 12px;
+    word-break: break-all;
+}
+
+.mempool-btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.mempool-btn {
+    background: transparent;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+
+.mempool-btn:hover {
+    background: #00ff00;
+    color: #0a0a0a;
+}
+
+.mempool-btn-reject {
+    border-color: #ff003c;
+    color: #ff003c;
+}
+
+.mempool-btn-reject:hover {
+    background: #ff003c;
+    color: #0a0a0a;
+}
