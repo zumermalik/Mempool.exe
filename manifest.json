@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Mempool.exe",
+  "version": "1.0.0",
+  "description": "Terminal-grade transaction interception and Mempool simulation.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/boot/content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/ui/terminal-theme.css",
+        "src/utils/constants.js",
+        "src/utils/decoder.js",
+        "src/services/risk-engine.js",
+        "src/ui/cyber-overlay.js",
+        "src/core/interceptor.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
