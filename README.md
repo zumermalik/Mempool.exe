@@ -72,6 +72,3 @@ Mempool.exe runs 100% locally. It does not track your IP, it does not store your
 
 *Built for the decentralized web.*
 
-```
-
-
